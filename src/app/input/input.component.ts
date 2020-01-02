@@ -11,10 +11,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./input.component.css']
 })
 export class InputComponent implements OnInit {
-    title: string ='';
+    title: string ='my title';
   constructor() { }
 
   ngOnInit() {
+    this.title = ' Hello World ';
   }
 
 }
