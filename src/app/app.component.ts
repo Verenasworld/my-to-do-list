@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'todo-root',
   template: `
     <h1> welcome to {{title}}</h1>
+    <todo-input></todo-input>
   `,
   styleUrls: [ './app.component.css' ]
 })
