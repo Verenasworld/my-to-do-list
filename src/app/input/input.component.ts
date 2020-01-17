@@ -3,9 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'todo-input',
   template: `
-  <input>
+  <input [value] = "title">
   <button>save</button>
-  <p>The title is :{{ title }}</p>
+  <p>The title is : {{ title }}</p>
   `
 ,
   styleUrls: ['./input.component.css']
@@ -14,7 +14,7 @@ export class InputComponent implements OnInit {
     title: string ='my title';
 
   constructor() { 
-    this.changeTitle (' i love Angular ');
+    this.changeTitle (' I love Angular ');
     }
 
   ngOnInit() {
@@ -23,6 +23,4 @@ export class InputComponent implements OnInit {
   changeTitle(newTitle: string){
   this.title = newTitle;
 }
-
-
 }
