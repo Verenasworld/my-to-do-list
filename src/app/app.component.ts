@@ -5,6 +5,8 @@ import { Component } from '@angular/core';
   template: `
     <h1> welcome to {{title}}</h1>
     <todo-input></todo-input>
+     <todo-input></todo-input>
+      <todo-input></todo-input>
   `,
   styleUrls: [ './app.component.css' ]
 })
