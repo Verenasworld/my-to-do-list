@@ -17,7 +17,10 @@ export class InputComponent implements OnInit {
     this.changeTitle (' I love Angular ');
     }
 
-  ngOnInit() {
+  ngOnInit(){
+    setTimeout(() => {
+    this.title = 'this is not the title you looking for';
+    }, 3000);
   }
  
   changeTitle(newTitle: string){
