@@ -3,7 +3,8 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'todo-input',
   template: `
-  <input [value] = "title">
+  <input [value] = "title" 
+          (keyup.enter)="changeTitle ($event.target.value)">
   <button (click)="changeTitle('Button Clicked!')">
    Save
   </button>
@@ -20,9 +21,6 @@ export class InputComponent implements OnInit {
     }
 
   ngOnInit(){
-    setTimeout(() => {
-    this.title = 'this is not the title you looking for';
-    }, 3000);
   }
  
   changeTitle(newTitle: string): void{
