@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'todo-input',
   template: `
-  <input [value] = "title">
+  <input [value] = "title" (keyup)="changeTitle ('Button Clicked!')">
   <button (click)="changeTitle('Button Clicked!')">
    Save
   </button>
