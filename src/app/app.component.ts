@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'todo-root',
   template: `
     <h1>
-     Welcome to {{title}
+     Welcome to {{title}}
     </h1>
     <todo-input></todo-input>
     <ul>
