@@ -3,11 +3,14 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'todo-root',
   template: `
-    <h1> welcome to {{title}}</h1>
+    <h1>
+     Welcome to {{title}
+    </h1>
     <todo-input></todo-input>
     <ul>
       <li *ngFor ="let item of todoList">
-      {{ item.title }}</li>
+      <todo-item [todoItem]="item"></todo-item>
+      </li>
     </ul>
   `,
   styleUrls: [ './app.component.css' ]
