@@ -18,7 +18,7 @@ export class InputComponent implements OnInit {
     title: string ='';
 
   @Output() submit: EventEmitter<string> = new EventEmitter;
-r
+
 
   constructor() { 
     }
