@@ -3,8 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'todo-list-manager',
   template: `
+  <div class="todo-app">
   <h1>
-      Welcome to {{ title }}!
+ My {{ title }}
     </h1>
 
     <todo-input (submit)="addItem($event)"></todo-input>
@@ -14,6 +15,7 @@ import { Component, OnInit } from '@angular/core';
         <todo-item [todoItem]="item"></todo-item>
       </li>
     </ul>
+    </div>
   `,
   styleUrls: ['./list-manager.component.css']
 })

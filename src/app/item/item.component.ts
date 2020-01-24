@@ -3,7 +3,9 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'todo-item',
   template: `
-    {{ todoItem.title }}
+    <div class="todo-item">
+  {{ todoItem.title }}
+</div>
   `,
   styleUrls: ['./item.component.css']
 })

@@ -1,7 +1,7 @@
 /* Add application styles & imports to this file! */
 html, body, div, span,
 h1, p, ul, li {
-  margin: 10;
+  margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
@@ -11,10 +11,10 @@ h1, p, ul, li {
 
 body {
   line-height: 1;
-  background: white;
+  background:  lightseagreen;
   font-size: 16px;
-  line-height: 20px;
-  color: black;
+  line-height: 25px;
+  color: #404040;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
@@ -29,7 +29,7 @@ ol, ul {
   padding: 3px 10px;
   margin: 0 0 0 3px;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 12px;
   line-height: 24px;
   cursor: pointer;
