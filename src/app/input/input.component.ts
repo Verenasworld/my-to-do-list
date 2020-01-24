@@ -6,6 +6,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   <input class="todo-input"
           [value] = "title" 
           (keyup.enter)="changeTitle ($event.target.value)"
+          onfocus = "this.value"
           #inputElement>
   <button class="btn" (click)="changeTitle(inputElement.value)">
    Save
