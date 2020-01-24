@@ -10,7 +10,5 @@ import { Component } from '@angular/core';
 export class AppComponent  {
 ;
 
-addItem(title: string): void{
-  this.todoList.push({title});
-}
+
 }
