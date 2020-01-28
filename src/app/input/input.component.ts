@@ -6,12 +6,12 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   <input class="todo-input"
           [value] = "title" 
           (keyup.enter)="changeTitle ($event.target.value)"
-          onfocus = "this.value"
+          [(ngModel)]="filterName"
           #inputElement>
   <button class="btn" (click)="changeTitle(inputElement.value)">
    Save
   </button>
-  <button class="btn" (click)="changeTitle(inputElement.value)">  
+  <button class="btn" (click)="onClear()">  
   Reset 
   </button>
   `,
@@ -19,6 +19,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class InputComponent implements OnInit {
     title: string ='';
+    filterName:string;
 
   @Output() submit: EventEmitter<string> = new EventEmitter;
 
@@ -35,5 +36,6 @@ export class InputComponent implements OnInit {
 
 onClear() {
 // on click reset the input field for new 
+this.filterName = '';
 }
 }
