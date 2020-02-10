@@ -1,15 +1,20 @@
 import { Injectable } from '@angular/core';
-
+const defaultList = [
+  { title: 'install NodeJS' },
+  { title: 'install Angular CLI' },
+  { title: 'create new app' },
+  { title: 'serve app' },
+  { title: 'develop app' },
+  { title: 'deploy app' },
+];
 const storageName = 'aah_todo_list';
 
 @Injectable()
 export class TodoListStorageserviceService {
  private todoList;
-
-  constructor() { 
-    this.todoList = JSON.parse(localStorage.getItem(storageName));
-  }
-
+constructor() {
+  this.todoList = JSON.parse(localStorage.getItem(storageName)) || defaultList;
+}
   private update() {
     localStorage.setItem(storageName, JSON.stringify(this.todoList));
 
