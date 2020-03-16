@@ -32,6 +32,7 @@ constructor() {
     this.todoList.push(item);
     return this.update();
   }
+  // update a item 
 put(item, changes) {
     Object.assign(this.todoList[this.findItemIndex(item)], changes);
     return this.update();
